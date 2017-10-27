@@ -1,0 +1,12 @@
+Hi
+
+Use this comment in mongodb terminal to create database and create username and password
+
+1)To create database
+	use DBNAME
+	
+2)Create username and password for the above database you have created
+	db.createUser({user:"USERNAME", pwd:"PASSWORD",roles:["readWrite","dbAdmin"]})
+		
+3)Use this comment to check if its successfull or not (It will return 1 if successfull otherwise 0)
+	db.auth("USERNAME", "PASSWORD")
